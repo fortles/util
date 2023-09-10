@@ -1,0 +1,12 @@
+{
+  "name": "@fortles/gesture-ui",
+  "version": "1.0.0",
+  "description": "Mouse and touch gestures for dom elements likse scale pan.",
+  "repository": "https://github.com/fortles/util.git",
+  "author": "Iván Barták <ivan@fortles.com>",
+  "license": "GNU",
+  "main": "/src/Gesture.js",
+  "require": {
+    "@fortles/transform-ui": "workspace:*"
+  }
+}

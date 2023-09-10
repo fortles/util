@@ -1,0 +1,8 @@
+{
+  "name": "@fortles/node-editor-ui",
+  "version": "1.0.0",
+  "description": "User interface for the node editor",
+  "repository": "https://github.com/fortles/util.git",
+  "author": "Iván Barták <ivan@fortles.com>",
+  "license": "GNU"
+}

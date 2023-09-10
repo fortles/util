@@ -1,0 +1,16 @@
+{
+  "name": "@fortles/util",
+  "version": "1.0.0",
+  "description": "Utilities to use outside and inside Fortles",
+  "main": "index.js",
+  "repository": "https://github.com/fortles/util.git",
+  "author": "Iván Barták <ivan@fortles.com>",
+  "license": "GNU",
+  "private": true,
+  "devDependencies": {
+    "tsc": "^2.0.4"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

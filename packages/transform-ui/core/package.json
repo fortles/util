@@ -1,0 +1,8 @@
+{
+  "name": "@fortles/transform-ui",
+  "version": "1.0.0",
+  "description": "Matrix transformation for dom via css.",
+  "repository": "https://github.com/fortles/util.git",
+  "author": "Iván Barták <ivan@fortles.com>",
+  "license": "GNU"
+}
