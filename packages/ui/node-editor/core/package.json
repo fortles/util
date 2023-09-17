@@ -1,8 +1,12 @@
 {
-  "name": "@fortles/node-editor-ui",
+  "name": "@fortles/ui-node-editor",
   "version": "1.0.0",
   "description": "User interface for the node editor",
   "repository": "https://github.com/fortles/util.git",
   "author": "Iván Barták <ivan@fortles.com>",
-  "license": "GNU"
+  "license": "GPL-3.0-or-later",
+  "require": {
+    "@fortles/ui-gesture": "workspace:*",
+    "@fortles/ui-transform": "workspace:*"
+  }
 }

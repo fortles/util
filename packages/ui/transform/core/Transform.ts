@@ -132,7 +132,7 @@ export class Transform{
      * @param y Y coordinate
      * @returns The inverse transformed coordinate
      */
-    public inverseTransform(x: number, y: number){
+    public inverseTransform(x: number, y: number): Vector2d{
         var [A, B, C, D, X, Y] = this.i;
         return {
             x: A*x + C*y,

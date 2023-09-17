@@ -1,9 +1,13 @@
-import { Transform } from "@fortles/transform-ui";
+import { Transform, Vector2d } from "@fortles/ui-transform";
 
 export interface GestureOptions{
     scale: boolean,
     move: boolean,
     handle: HTMLElement|null
+}
+
+export interface PositionalEvent extends Event{
+    consturct(type: string, eventInitDict: EventInit & {position: Vector2d});
 }
 
 export class Gesture{
@@ -29,6 +33,8 @@ export class Gesture{
         }else{
             this.handleElement = this.options.handle;
         }
+        
+        this.element.classList.add('f-gesture');
         
         if(this.options.move){
             this.handleElement.addEventListener("mousedown", event => this.mouseStart(event));
@@ -72,9 +78,10 @@ export class Gesture{
         this.lastPosition = {x: x, y: y};
     }
     
-    dragMove(x, y){
+    dragMove(x: number, y: number){
         let pos = this.inverseTransform(x - this.lastPosition.x,y - this.lastPosition.y);
-        const event = new Event('Gesture.move', {position: pos});
+        //@ts-ignore
+        const event = new Event('Fortles.Gesture.move', {position: pos});
         this.element.dispatchEvent(event);
         this.transform.move(pos.x, pos.y);
         this.lastPosition.x = x;

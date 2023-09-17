@@ -5,12 +5,16 @@
   "main": "index.js",
   "repository": "https://github.com/fortles/util.git",
   "author": "Iván Barták <ivan@fortles.com>",
-  "license": "GNU",
+  "license": "GPL-3.0-or-later",
   "private": true,
   "devDependencies": {
-    "tsc": "^2.0.4"
+    "rollup": "^3.29.2",
+    "rollup-plugin-scss": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "tsc": "^2.0.4",
+    "typescript": "^5.2.2"
   },
   "workspaces": [
-    "packages/*"
+    "packages/ui/*/*"
   ]
 }
